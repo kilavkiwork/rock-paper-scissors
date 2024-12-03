@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK | PAPER | SCISSORS</title>
+
+    <link
+      rel="icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__logo">
+              <ul>
+                <li>rock</li>
+                <li>paper</li>
+                <li>scissors</li>
+              </ul>
+            </div>
+            <div class="header__score">
+              <p>score</p>
+              <p id="counter" class="counter"></p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="result">
+          <div class="container">
+            <div class="result__wrapper">
+              <article class="choice">
+                <h3 class="choice__title">you picked</h3>
+                <div class="choice__icon"> 
+                  <img
+                    id="player-image"
+                    width="293"
+                    height="300"
+                    src="#"
+                    alt="Player Choice"
+                  />
+                </div>
+              </article>
+              <article class="winner">
+                <h2 class="winner-title">you win</h2>
+                <button id="play-again" class="btn btn-invert">play again</button>
+              </article>
+              <article class="choice">
+                <h3 class="choice__title">the house picked</h3>
+                <div class="choice__icon">
+                  <img
+                    id="computer-image"
+                    width="293"
+                    height="300"
+                    src="#"
+                    alt="Computer Choice"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-body">
+            <button id="rules" class="btn">rules</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="popup" class="popup">
+      <div class="popup__content">
+        <h2 class="popup__title">rules</h2>
+        <img
+          class="image__close"
+          id="close"
+          width="19"
+          height="19"
+          src="assets/images/icon-close.svg"
+          alt="Close"
+        />
+        <img
+          class="image__content"
+          width="305"
+          height="271"
+          src="assets/images/image-rules.svg"
+          alt="Rules"
+        />
+      </div>
+    </div>
+    <script src="./scripts/game.js"></script>
+  </body>
+</html>
