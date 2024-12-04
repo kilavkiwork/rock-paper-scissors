@@ -62,8 +62,8 @@ PLAYER_IMAGE.src = PATH_ICON[`${playerChoice}`];
 COMPUTER_IMAGE.src = PATH_ICON[`${computerChoice}`];
 
 PLAY_AGAIN.addEventListener("click", () => {
-  let queryString = `?counter=${COUNTER.textContent}`;
-  window.location.href = `/${queryString}`;
+  let queryString = `index.html?counter=${COUNTER.textContent}`;
+  window.location.href = queryString;
 });
 
 document.querySelector("#rules").addEventListener("click", () => {
